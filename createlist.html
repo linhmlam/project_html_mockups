@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grocery List Consolidator</title>
+
+  <!-- Adds Bootswatch CSS  -->
+  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/paper/bootstrap.min.css">
+
+  <!-- Adds Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <!-- Adds your custom styles -->
+
+  <link rel="stylesheet" type="text/css" href="my_styles.css">
+
+  <!-- Adds Bootstrap Javascript -->
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="page-header">
+          <h1>Create a Grocery List</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start of the form/list of recipes -->
+    <form role="form">
+
+      <div class="row">
+        <div class="form-group">
+          <div class="col-sm-2">
+            <label for="list-name">List Name</label>
+          </div>
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="list-name" placeholder="Vegetarian Week">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">&nbsp;</div>
+
+      <!-- List of recipes -->
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label>Select the recipes you would like to shop for this week:</label>
+
+            <ul class="list-group">
+              <!--Recipes!-->
+              <li class="list-group-item">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">Shakshuka
+                  </label>
+                </div><!--checkbox -->
+              </li>
+
+              <li class="list-group-item">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">Zucchini Fritters
+                  </label>
+                </div><!--checkbox -->
+              </li>
+
+              <li class="list-group-item">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">Creamy Tomato Soup
+                  </label>
+                </div><!--checkbox -->
+              </li>
+
+              <li class="list-group-item">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">Zucchini Fritters
+                  </label>
+                </div><!--checkbox -->
+              </li>
+
+
+              <li class="list-group-item">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">Bacon Corn Hash
+                  </label>
+                </div><!--checkbox -->
+              </li>
+
+              <li class="list-group-item">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">Baked Chicken Nuggets
+                  </label>
+                </div><!--checkbox -->
+              </li>
+            </ul>
+           </div><!--form-group-->
+        </div><!--col-sm-12-->
+      </div><!--row-->
+
+      <div class="col-sm-12">
+        <button type="submit" class="btn btn-success"><a href="viewlist.html">Make my list!</a></button> or <a href="#">Cancel</a>
+      </div>
+    </form>
+
+    <div class="row">&nbsp;</div>
+  </div><!--container-->
+</body>
+</html>

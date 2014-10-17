@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grocery List Consolidator</title>
+
+  <!-- Adds Bootswatch CSS  -->
+  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/paper/bootstrap.min.css">
+
+  <!-- Adds Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <!-- Adds your custom styles -->
+
+  <link rel="stylesheet" type="text/css" href="my_styles.css">
+
+  <!-- Adds Bootstrap Javascript -->
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- This is the header!  -->
+    <div class="row">
+      <div class="page-header">
+        <h1>Enter your recipe</h1>
+      </div>
+    </div>
+
+    <form class="form" action="#">
+
+      <!--This is the recipe name row-->
+      <div class="row">
+        <div class="form-group">
+          <div class="col-sm-2">
+            <label for="recipe-name">Recipe Name</label>
+          </div>
+          <div class="col-sm-10">
+            <input name="recipe-name" type="text" id="recipe-name" class="form-control" placeholder="Shakshuka">
+          </div><!--col-sm-10-->
+        </div><!--form-group-->
+      </div><!--row-->
+
+      <div class="row">&nbsp;</div>
+
+      <!-- This is the section header -->
+      <div class="row">
+        <div class="col-sm-1">
+          <h6><label for="quantity">Quantity</label></h6>
+        </div>
+        <div class="col-sm-2">
+          <h6><label for="unit">Unit of Measurement</label></h6>
+        </div>
+        <div class="col-sm-9">
+          <h6><label for="ingredient">Ingredient</label></h6>
+        </div>
+      </div>
+
+      <!-- This is the row 1 of entries you can make -->
+      <div class="row">
+        <div class="form-group">
+          <div class="col-sm-1">
+            <input type="number" name="quantity" id="quantity" placeholder="1" class="form-control">
+          </div>
+          <!-- This is the dropdown for the menu ingredients -->
+          <div class="col-sm-2">
+            <select name="unit" id="unit" class="form-control">
+              <option value="c">cup(s)</option>
+              <option value="fl_oz">fluid ounce(s)</option>
+              <option value="gal">gallon(s)</option>
+              <option value="g">gram(s)</option>
+              <option value="c">kilogram(s)</option>
+              <option value="l">liter(s)</option>
+              <option value="ml">milliliter(s)</option>
+              <option value="oz">ounce(s)</option>
+              <option value="pinch">pinch(es)</option>
+              <option value="pt">pint(s)</option>
+              <option value="lbs">pound(s)</option>
+              <option value="qt">quart(s)</option>
+              <option value="tbsp">tablespoon(s)</option>
+              <option value="tsp">teaspoon(s)</option>
+            </select>
+          </div><!-- col-sm-2 -->
+          <!-- How people can enter ingredients -->
+          <div class="col-sm-9">
+            <input name="ingredient" type="text" id="ingredient" placeholder="i.e. eggs, ribeye, etc." class="form-control">
+          </div><!-- col-sm-9 -->
+        </div><!--form-group-->
+      </div><!--row-->
+
+       <!-- This is the for 2 of entries you can make -->
+      <div class="row">
+        <div class="form-group">
+          <div class="col-sm-1">
+            <input type="number" name="quantity" id="quantity" placeholder="1" class="form-control">
+          </div>
+          <!-- This is the dropdown for the menu ingredients -->
+          <div class="col-sm-2">
+            <select name="unit" id="unit" class="form-control">
+              <option value="c">cup(s)</option>
+              <option value="fl_oz">fluid ounce(s)</option>
+              <option value="gal">gallon(s)</option>
+              <option value="g">gram(s)</option>
+              <option value="c">kilogram(s)</option>
+              <option value="l">liter(s)</option>
+              <option value="ml">milliliter(s)</option>
+              <option value="oz">ounce(s)</option>
+              <option value="pinch">pinch(es)</option>
+              <option value="pt">pint(s)</option>
+              <option value="lbs">pound(s)</option>
+              <option value="qt">quart(s)</option>
+              <option value="tbsp">tablespoon(s)</option>
+              <option value="tsp">teaspoon(s)</option>
+            </select>
+          </div><!-- col-sm-2 -->
+          <!-- How people can enter ingredients -->
+          <div class="col-sm-9">
+            <input name="ingredient" type="text" id="ingredient" placeholder="i.e. eggs, ribeye, etc." class="form-control">
+          </div><!-- col-sm-9 -->
+        </div><!--form-group-->
+      </div><!--row-->
+
+      <!-- This is the row 3 of entries you can make -->
+      <div class="row">
+        <div class="form-group">
+          <div class="col-sm-1">
+            <input type="number" name="quantity" id="quantity" placeholder="1" class="form-control">
+          </div>
+          <!-- This is the dropdown for the menu ingredients -->
+          <div class="col-sm-2">
+            <select name="unit" id="unit" class="form-control">
+              <option value="c">cup(s)</option>
+              <option value="fl_oz">fluid ounce(s)</option>
+              <option value="gal">gallon(s)</option>
+              <option value="g">gram(s)</option>
+              <option value="c">kilogram(s)</option>
+              <option value="l">liter(s)</option>
+              <option value="ml">milliliter(s)</option>
+              <option value="oz">ounce(s)</option>
+              <option value="pinch">pinch(es)</option>
+              <option value="pt">pint(s)</option>
+              <option value="lbs">pound(s)</option>
+              <option value="qt">quart(s)</option>
+              <option value="tbsp">tablespoon(s)</option>
+              <option value="tsp">teaspoon(s)</option>
+            </select>
+          </div><!-- col-sm-2 -->
+          <!-- How people can enter ingredients -->
+          <div class="col-sm-9">
+            <input name="ingredient" type="text" id="ingredient" placeholder="i.e. eggs, ribeye, etc." class="form-control">
+          </div><!-- col-sm-9 -->
+        </div><!--form-group-->
+      </div><!--row-->
+
+            <!-- This is the row 4 of entries you can make -->
+      <div class="row">
+        <div class="form-group">
+          <div class="col-sm-1">
+            <input type="number" name="quantity" id="quantity" placeholder="1" class="form-control">
+          </div>
+          <!-- This is the dropdown for the menu ingredients -->
+          <div class="col-sm-2">
+            <select name="unit" id="unit" class="form-control">
+              <option value="c">cup(s)</option>
+              <option value="fl_oz">fluid ounce(s)</option>
+              <option value="gal">gallon(s)</option>
+              <option value="g">gram(s)</option>
+              <option value="c">kilogram(s)</option>
+              <option value="l">liter(s)</option>
+              <option value="ml">milliliter(s)</option>
+              <option value="oz">ounce(s)</option>
+              <option value="pinch">pinch(es)</option>
+              <option value="pt">pint(s)</option>
+              <option value="lbs">pound(s)</option>
+              <option value="qt">quart(s)</option>
+              <option value="tbsp">tablespoon(s)</option>
+              <option value="tsp">teaspoon(s)</option>
+            </select>
+          </div><!-- col-sm-2 -->
+          <!-- How people can enter ingredients -->
+          <div class="col-sm-9">
+            <input name="ingredient" type="text" id="ingredient" placeholder="i.e. eggs, ribeye, etc." class="form-control">
+          </div><!-- col-sm-9 -->
+        </div><!--form-group-->
+      </div><!--row-->
+
+            <!-- This is the row 5 of entries you can make -->
+      <div class="row">
+        <div class="form-group">
+          <div class="col-sm-1">
+            <input type="number" name="quantity" id="quantity" placeholder="1" class="form-control">
+          </div>
+          <!-- This is the dropdown for the menu ingredients -->
+          <div class="col-sm-2">
+            <select name="unit" id="unit" class="form-control">
+              <option value="c">cup(s)</option>
+              <option value="fl_oz">fluid ounce(s)</option>
+              <option value="gal">gallon(s)</option>
+              <option value="g">gram(s)</option>
+              <option value="c">kilogram(s)</option>
+              <option value="l">liter(s)</option>
+              <option value="ml">milliliter(s)</option>
+              <option value="oz">ounce(s)</option>
+              <option value="pinch">pinch(es)</option>
+              <option value="pt">pint(s)</option>
+              <option value="lbs">pound(s)</option>
+              <option value="qt">quart(s)</option>
+              <option value="tbsp">tablespoon(s)</option>
+              <option value="tsp">teaspoon(s)</option>
+            </select>
+          </div><!-- col-sm-2 -->
+          <!-- How people can enter ingredients -->
+          <div class="col-sm-9">
+            <input name="ingredient" type="text" id="ingredient" placeholder="i.e. eggs, ribeye, etc." class="form-control">
+          </div><!-- col-sm-9 -->
+        </div><!--form-group-->
+      </div><!--row-->
+      <!-- Add more ingredients -->
+      <div class="row">
+        <div class="col-sm-12">
+          <a href="#">Add more ingredients <span class="glyphicon glyphicon-chevron-down"></span></a>
+        </div><!--col-sm-12-->
+      </div><!-- row -->
+
+      <div class="row">&nbsp;</div>
+      <div class="row">&nbsp;</div>
+
+      <!--  Submit -->
+      <div class="row">
+        <div class="col-sm-12">
+          <button type="submit" class="btn btn-success">Submit</button> or <a href="#">Cancel</a>
+        </div>
+      </div>
+
+    </form>
+  </div><!-- Container -->
+</body>
+</html>
